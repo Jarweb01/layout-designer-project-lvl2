@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background: #08020d;
+  color: #cacaca;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+.header {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header__inner {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo__img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.headerList {
+  display: flex;
+}
+.headerList .headerList__item + .headerList__item {
+  margin-left: 24px;
+}
+.headerList .headerList__item.active {
+  color: #fff;
+}
+.headerList .headerList__link {
+  text-transform: uppercase;
+}
+.headerList .headerList__link:hover {
+  text-decoration: underline;
+}
+
+.headerForm__input {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 5px 10px;
+  background: #3C3B3D;
+  border: none;
+  color: #fff;
+}
+.headerForm__input::placeholder {
+  text-transform: uppercase;
+}
+
+.firstScreen {
+  padding: 200px 0;
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.firstScreenForm {
+  max-width: 570px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.firstScreenForm__input {
+  display: block;
+  min-width: 270px;
+  min-height: 50px;
+  padding: 16px 20px;
+  margin-bottom: 1.5rem;
+  border: 2px solid #cacaca;
+  border-radius: 3px;
+}
+
+.firstScreenForm__btn {
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

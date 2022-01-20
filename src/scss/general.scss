@@ -4,6 +4,7 @@
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -20,7 +21,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   background: #08020d;
-  color: #cacaca;
+  color: $mainColor;
 }
 
 h1,
@@ -40,6 +41,12 @@ h1 {
 
 h2 {
   font-size: 38px;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 

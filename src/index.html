@@ -7,9 +7,52 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>Портал «Music Box» Jarweb01</title>
 </head>
 <body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo headerLogo" href="index.html">
+          <img class="headerLogo__img" src="images/logo.svg" alt="logo">
+          <span class="headerLogo__text">Music Box</span>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list headerList">
+            <li class="headerList__item active">
+              <a href="#" class="headerList__link">Главная</a>
+            </li>
+            <li class="headerList__item">
+              <a href="#" class="headerList__link">Каталог</a>
+            </li>
+            <li class="headerList__item">
+              <a href="#" class="headerList__link">Исполнители</a>
+            </li>
+            <li class="headerList__item">
+              <a href="#" class="headerList__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <form action="#" class="header__form headerForm">
+          <input class="headerForm__input" type="search" placeholder="Поиск...">
+        </form>
+      </div>
+    </div>
+  </header>
+  <section class="firstScreen" id="page-description">
+    <div class="container">
+      <h1 class="firstScreen__title">Онлайн музыка где угодно</h1>
+      <h2 class="firstScreen__subtitle">без ограничений</h2>
+      <form class="firstScreen__form firstScreenForm" action="#">
+        <div class="firstScreenForm__heading"></div>
+        <input class="firstScreenForm__input" type="text">
+        <input class="firstScreenForm__input" type="mail">
+        <input class="firstScreenForm__btn" type="submit" value="Получить доступ">
+      </form>
+    </div>
+  </section>
   
 </body>
 </html>
