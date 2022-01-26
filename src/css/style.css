@@ -20,7 +20,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   background: #08020d;
-  color: #cacaca;
+  color: #fff;
 }
 
 h1,
@@ -83,8 +83,15 @@ h2 {
   margin-right: 16px;
 }
 
+.headerLogo__text {
+  text-transform: uppercase;
+}
+
 .headerList {
   display: flex;
+}
+.headerList .headerList__item {
+  color: #cacaca;
 }
 .headerList .headerList__item + .headerList__item {
   margin-left: 24px;
@@ -116,10 +123,16 @@ h2 {
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
+  text-align: center;
+}
+
+.firstScreen__subtitle {
+  margin-bottom: 30px;
 }
 
 .firstScreenForm {
   max-width: 570px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -133,12 +146,28 @@ h2 {
   margin-bottom: 1.5rem;
   border: 2px solid #cacaca;
   border-radius: 3px;
+  background-color: transparent;
+}
+.firstScreenForm__input::placeholder {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .firstScreenForm__btn {
   width: 100%;
   padding: 20px 30px;
   border-radius: 5px;
+  background-color: #34C176;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.firstScreen__formHeading {
+  font-size: 16px;
+  margin-bottom: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */

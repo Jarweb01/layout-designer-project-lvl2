@@ -3,9 +3,14 @@
   background-image: url('../images/banner.png');
   background-position: center;
   background-size: cover;
+  text-align: center;
+}
+.firstScreen__subtitle {
+  margin-bottom: 30px;
 }
 .firstScreenForm {
   max-width: 570px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -18,9 +23,24 @@
   margin-bottom: 1.5rem;
   border: 2px solid $mainColor;
   border-radius: 3px;
+  background-color: transparent;
+  &::placeholder {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+  }
 }
 .firstScreenForm__btn {
   width: 100%;
   padding: 20px 30px;
   border-radius: 5px;
+  background-color: $green;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+.firstScreen__formHeading {
+  font-size: 16px;
+  margin-bottom: 17px;
 }
