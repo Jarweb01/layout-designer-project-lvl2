@@ -291,4 +291,18 @@ h2 {
   font-size: 16px;
 }
 
+@media (max-width: 1240px) {
+  .pricing__block {
+    flex-direction: column;
+  }
+
+  .pricingItem {
+    width: 100%;
+  }
+  .pricingItem + .pricingItem {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
