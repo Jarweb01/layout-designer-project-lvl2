@@ -1,4 +1,5 @@
 .header {
+  width: 100%;
   position: absolute;
   top: 25px;
   left: 50%;
@@ -54,5 +55,36 @@
   color: #fff;
   &::placeholder {
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1240px) {
+  .header__inner {
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .headerList {
+    flex-direction: column;
+  }
+  .headerList {
+    .headerList__item {
+       + .headerList__item {
+        margin-left: 0;
+      }
+    }
+  }
+  .header__nav {
+    margin-bottom: 18px;
+  }
+  .headerLogo {
+    margin-bottom: 17px;
+  }
+  .headerForm {
+    width: 100%;
+    margin-bottom: 78px;
+  }
+  .headerForm__input {
+    width: 100%;
   }
 }

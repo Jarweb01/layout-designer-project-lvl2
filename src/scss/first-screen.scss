@@ -44,3 +44,15 @@
   font-size: 16px;
   margin-bottom: 17px;
 }
+
+@media (max-width: 1240px) {
+  .firstScreen {
+    padding: 250px 0 200px;
+  }
+  .firstScreenForm {
+    max-width: none;
+  }
+  .firstScreenForm__input {
+    width: 100%;
+  }
+}

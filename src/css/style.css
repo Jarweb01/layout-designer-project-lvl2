@@ -21,6 +21,7 @@ body {
   line-height: 1.5;
   background: #08020d;
   color: #fff;
+  overflow-x: clip;
 }
 
 h1,
@@ -58,6 +59,7 @@ h2 {
   }
 }
 .header {
+  width: 100%;
   position: absolute;
   top: 25px;
   left: 50%;
@@ -118,6 +120,38 @@ h2 {
   text-transform: uppercase;
 }
 
+@media (max-width: 1240px) {
+  .header__inner {
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headerList {
+    flex-direction: column;
+  }
+
+  .headerList .headerList__item + .headerList__item {
+    margin-left: 0;
+  }
+
+  .header__nav {
+    margin-bottom: 18px;
+  }
+
+  .headerLogo {
+    margin-bottom: 17px;
+  }
+
+  .headerForm {
+    width: 100%;
+    margin-bottom: 78px;
+  }
+
+  .headerForm__input {
+    width: 100%;
+  }
+}
 .firstScreen {
   padding: 200px 0;
   background-image: url("../images/banner.png");
@@ -168,6 +202,20 @@ h2 {
 .firstScreen__formHeading {
   font-size: 16px;
   margin-bottom: 17px;
+}
+
+@media (max-width: 1240px) {
+  .firstScreen {
+    padding: 250px 0 200px;
+  }
+
+  .firstScreenForm {
+    max-width: none;
+  }
+
+  .firstScreenForm__input {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
