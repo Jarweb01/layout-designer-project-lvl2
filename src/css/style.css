@@ -217,5 +217,78 @@ h2 {
     width: 100%;
   }
 }
+.pricing {
+  padding-top: 100px;
+}
+
+.pricing__title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.pricing__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.pricingItem {
+  width: 33%;
+  padding: 24px 27px 64px 1.5em;
+  border-radius: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pricingItem--free {
+  background-image: url("../images/subscribe_1.png");
+}
+.pricingItem--standart {
+  background-image: url("../images/subscribe_2.png");
+}
+.pricingItem--premium {
+  background-image: url("../images/subscribe_3.png");
+}
+.pricingItem + .pricingItem {
+  margin-left: 50px;
+}
+.pricingItem .pricingItem__title {
+  margin-bottom: 200px;
+  text-align: center;
+}
+.pricingItem .pricingItem__price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.pricingItem .pricingItemPrice__number {
+  font-size: 64px;
+  line-height: 1em;
+  margin-right: 16px;
+}
+.pricingItem .pricingItemPrice__text {
+  font-size: 32px;
+  line-height: 1;
+}
+.pricingItem .pricingItem__link {
+  display: inline-block;
+  width: 100%;
+  padding: 21px 0;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 64px;
+}
+.pricingItem .pricingItem__desc {
+  text-align: center;
+  font-size: 13px;
+}
+
+.pricing__text {
+  text-align: center;
+  font-size: 16px;
+}
 
 /*# sourceMappingURL=style.css.map */
