@@ -326,6 +326,10 @@ h2 {
 .newsItem__img {
   padding-right: 25px;
 }
+.newsItem__img img {
+  display: block;
+  width: 100%;
+}
 
 .newsItem__body {
   padding-left: 25px;
@@ -348,10 +352,15 @@ h2 {
   display: flex;
   max-height: 20px;
   margin-bottom: 48px;
+  font-size: 12px;
 }
 
 .newsItemAuthor__img {
   margin-right: 16px;
+}
+.newsItemAuthor__img img {
+  display: block;
+  width: 100%;
 }
 
 .newsItemAuthor__name {
@@ -365,6 +374,24 @@ h2 {
   padding: 16px 31px;
   border: 1px solid #cacaca;
   border-radius: 5px;
+}
+
+@media (max-width: 1240px) {
+  .newsItem {
+    flex-direction: column;
+  }
+  .newsItem:nth-child(even) .newsItem__body {
+    order: 0;
+  }
+
+  .newsItem__img img {
+    margin-bottom: 50px;
+  }
+
+  .newsItem__title {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
