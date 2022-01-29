@@ -493,4 +493,22 @@ h2 {
   margin-left: 16px;
 }
 
+@media (max-width: 1240px) {
+  .footer__main {
+    flex-direction: column;
+  }
+
+  .footerBottomList {
+    flex-direction: column;
+  }
+
+  .footerColumn {
+    margin-bottom: 30px;
+  }
+}
+.footerBottomList__item + .footerBottomList__item {
+  margin-left: 0;
+  margin-top: 16px;
+}
+
 /*# sourceMappingURL=style.css.map */
