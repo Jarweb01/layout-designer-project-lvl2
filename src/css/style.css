@@ -393,5 +393,33 @@ h2 {
     margin-bottom: 16px;
   }
 }
+.app {
+  padding: 100px 0;
+}
+
+.app__title {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.appBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.appBlock__text {
+  max-width: 600px;
+}
+.appBlock__text p {
+  margin-bottom: 16px;
+}
+
+.appBlock__btn {
+  display: inline-block;
+  background: #95390C;
+  padding: 17px 40px;
+  border-radius: 32px;
+  font-size: 12.8px;
+}
 
 /*# sourceMappingURL=style.css.map */
