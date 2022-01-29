@@ -441,5 +441,56 @@ h2 {
     font-size: 16px;
   }
 }
+.footer {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+.footer__top {
+  padding: 3rem 0;
+  border-bottom: 1px solid #cacaca;
+}
+
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerColumn__title {
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footerColumn__block {
+  display: flex;
+  flex-direction: column;
+}
+.footerColumn__block--social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footerColumn__block--social a + a {
+  margin-left: 24px;
+}
+
+.footerColumn__link {
+  font-size: 16px;
+}
+
+.footerBottom {
+  padding: 2rem 0;
+}
+
+.footerBottomList {
+  display: flex;
+}
+
+.footerBottomList__item + .footerBottomList__item {
+  margin-left: 16px;
+}
 
 /*# sourceMappingURL=style.css.map */
